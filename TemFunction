@@ -1,0 +1,19 @@
+#Creating Functions for starting a thermostat and how it act according to temperature.
+#When Powered On
+def Power(state):
+     if(state==1):
+         print("Power On")
+         Temperature = int(input("Enter the Temperature in Degrees celsius: "))
+         def Ai(Temperature):
+            if(Temperature>25):
+                print("Temperatures are too high! Cooling started")
+            else:
+                print("Temperatures are too low! Warming started")
+         Ai(Temperature)
+#When powered Off
+     elif(state==0):
+         print("Power Off")
+     else:
+         print("Invalid Input")
+    
+Power(1)
